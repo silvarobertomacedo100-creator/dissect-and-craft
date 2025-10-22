@@ -9,6 +9,9 @@ import Contatos from "./pages/Contatos";
 import Chatbots from "./pages/Chatbots";
 import Fluxos from "./pages/Fluxos";
 import Agentes from "./pages/Agentes";
+import EnvioMassa from "./pages/EnvioMassa";
+import Relatorios from "./pages/Relatorios";
+import Configuracoes from "./pages/Configuracoes";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,9 +29,9 @@ const App = () => (
             <Route path="/chatbots" element={<Chatbots />} />
             <Route path="/fluxos" element={<Fluxos />} />
             <Route path="/agentes" element={<Agentes />} />
-            <Route path="/envio" element={<div className="p-6"><h1 className="text-2xl font-bold">Envio em Massa</h1></div>} />
-            <Route path="/relatorios" element={<div className="p-6"><h1 className="text-2xl font-bold">Relatórios</h1></div>} />
-            <Route path="/configuracoes" element={<div className="p-6"><h1 className="text-2xl font-bold">Configurações</h1></div>} />
+            <Route path="/envio" element={<EnvioMassa />} />
+            <Route path="/relatorios" element={<Relatorios />} />
+            <Route path="/configuracoes" element={<Configuracoes />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </MainLayout>
